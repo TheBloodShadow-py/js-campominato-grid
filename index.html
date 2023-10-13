@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Griglia Campo Minato</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" async type="text/javascript"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js" async type="text/javascript"></script>
   </head>
-  <body></body>
+  <body class="bg-slate-50">
+    <main class="w-full h-[100vh] flex justify-center">
+      <div class="container my-0 mx-auto transition-all">
+        <section class="flex flex-col gap-5 my-10 p-8 items-start">
+          <div class="flex gap-3 items-center">
+            <span>Select the difficulty:</span>
+            <select name="difficulty" id="domDiff" class="py-2 px-3 rounded">
+              <option value="10">Easy</option>
+              <option value="9">Medium</option>
+              <option value="7">Hard</option>
+            </select>
+          </div>
+          <button id="domStartGame" class="bg-slate-700 mb-8 text-white py-2 px-5 rounded">Play!</button>
+          <div id="domGrid" class="grid gap-2 self-center"></div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
